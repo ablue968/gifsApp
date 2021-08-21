@@ -1,0 +1,23 @@
+<h5>Buscar:</h5>
+<form [formGroup]="searchForm" >
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Buscar gifs.."
+        formControlName="search"
+        (keyup.enter)="search()"
+    >
+</form>
+
+
+<!-- <input 
+    type="text" 
+    class="form-control" 
+    placeholder="Buscar gifs.."
+    (keyup.enter)="buscar()"
+    #refToSearch
+    
+> -->
+
+
+

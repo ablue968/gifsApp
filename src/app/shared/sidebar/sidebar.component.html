@@ -1,0 +1,13 @@
+<div class="bg-dark border-rigth p-3" id="sidebar">
+    <h3 class="text-light">
+      Gifs-App
+    </h3>
+    <hr class="text-light"/>
+    <div class="list-group list-reset">
+      <div class="mb-2" >
+        <a *ngFor="let item of dashboard" href="#" class="list-group-item list-group-item-action mb-1">
+          {{item | titlecase }}
+        </a>
+      </div>
+    </div>
+  </div>
