@@ -13,5 +13,8 @@ export class SidebarComponent {
   }
   constructor(public gifService: GifsService) { }
 
+  anchorQuery( query: string ){
+    this.gifService.searchGifs( query );
+  }
 
 }

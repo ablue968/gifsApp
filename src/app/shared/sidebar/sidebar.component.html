@@ -5,7 +5,7 @@
     <hr class="text-light"/>
     <div class="list-group list-reset">
       <div class="mb-2" >
-        <a *ngFor="let item of dashboard" href="#" class="list-group-item list-group-item-action mb-1">
+        <a (click)="anchorQuery( item )" *ngFor="let item of dashboard" href="#" class="list-group-item list-group-item-action mb-1">
           {{item | titlecase }}
         </a>
       </div>
